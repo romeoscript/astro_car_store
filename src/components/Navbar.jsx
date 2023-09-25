@@ -2,6 +2,8 @@
 import Logo from "../images/logo/logo.png";
 import '../styles/NavbarStyles/_index.scss'
 import { useState } from "react";
+import CloseIcon from '@mui/icons-material/Close';
+import MenuIcon from '@mui/icons-material/Menu';
 
 function Navbar() {
   const [nav, setNav] = useState(false);
@@ -9,48 +11,45 @@ function Navbar() {
   const openNav = () => {
     setNav(!nav);
   };
-
+  console.log(nav);
   return (
     <>
       <nav>
         {/* mobile */}
-        <div className={`mobile-navbar ${nav ? "open-nav" : ""}`}>
-          <div onClick={openNav} className="mobile-navbar__close">
-            <i className="fa-solid fa-xmark"></i>
-          </div>
+        {nav && <div className='mobile-navbar1'>
           <ul className="mobile-navbar__links">
             <li>
-              <a onClick={openNav} href="/">
+              <a onClick={openNav} to="/">
                 Home
               </a>
             </li>
             <li>
-              <a onClick={openNav} href="/about">
+              <a onClick={openNav} to="/about">
                 About
               </a>
             </li>
             <li>
-              <a onClick={openNav} href="/models">
+              <a onClick={openNav} to="/models">
                 Models
               </a>
             </li>
             <li>
-              <a onClick={openNav} href="/testimonials">
+              <a onClick={openNav} to="/testimonials">
                 Testimonials
               </a>
             </li>
             <li>
-              <a onClick={openNav} href="/team">
+              <a onClick={openNav} to="/team">
                 Our Team
               </a>
             </li>
             <li>
-              <a onClick={openNav} href="/contact">
+              <a onClick={openNav} to="/contact">
                 Contact
               </a>
             </li>
           </ul>
-        </div>
+        </div>}
 
         {/* desktop */}
 
@@ -106,10 +105,14 @@ function Navbar() {
             </a>
           </div>
 
-          {/* mobile */}
-          <div className="mobile-hamb" onClick={openNav}>
-            <i className="fa-solid fa-bars"></i>
+          <div className='mobile_menu'>
+            {nav ? < CloseIcon onClick={openNav} style={{ cursor: 'pointer' }} /> : < MenuIcon onClick={openNav} style={{ cursor: 'pointer' }} />}
           </div>
+
+          {/* mobile */}
+          {/* <div className="mobile-hamb" onClick={openNav}>
+            <i className="fa-solid fa-bars"></i>
+          </div> */}
         </div>
       </nav>
     </>

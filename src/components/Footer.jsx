@@ -22,10 +22,10 @@ function Footer() {
               <li>
                 <a
                   href="mailto: 
-                carrental@gmail.com"
+                  romeobourne211@gmail.com"
                 >
                   <i className="fa-solid fa-envelope"></i>
-                  &nbsp; calebjephuneh@gmail.com
+                  &nbsp; romeobourne211@gmail.com
                 </a>
               </li>
 
@@ -34,9 +34,9 @@ function Footer() {
                   style={{ fontSize: "14px" }}
                   target="_blank"
                   rel="noreferrer"
-                  href="https://jephunneh.com/"
+                  href="#"
                 >
-                  Design by cjephuneh
+                  Design by Romeoscript
                 </a>
               </li>
             </ul>
