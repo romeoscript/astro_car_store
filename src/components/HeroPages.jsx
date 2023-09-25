@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+import '../styles/global/_index.scss'
 
 function HeroPages({ name }) {
   return (
@@ -9,7 +9,7 @@ function HeroPages({ name }) {
           <div className="hero-pages__text">
             <h3>{name}</h3>
             <p>
-              <Link to="/">Home</Link> / {name}
+              <a href="/">Home</a> / {name}
             </p>
           </div>
         </div>
