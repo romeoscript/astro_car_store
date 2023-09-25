@@ -109,10 +109,7 @@ function Navbar() {
             {nav ? < CloseIcon onClick={openNav} style={{ cursor: 'pointer' }} /> : < MenuIcon onClick={openNav} style={{ cursor: 'pointer' }} />}
           </div>
 
-          {/* mobile */}
-          {/* <div className="mobile-hamb" onClick={openNav}>
-            <i className="fa-solid fa-bars"></i>
-          </div> */}
+         
         </div>
       </nav>
     </>

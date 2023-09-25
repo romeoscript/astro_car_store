@@ -8,8 +8,8 @@ import Testimonials from "../components/Testimonials";
 <Layout title="testimonial">
 
     <section class="testimonial-page">
-        <HeroPages name="Testimonials" />
-        <Testimonials />
+        <HeroPages name="Testimonials" client:load/>
+        <Testimonials client:load/>
         <div class="book-banner">
           <div class="book-banner__overlay"></div>
           <div class="container">
@@ -22,6 +22,6 @@ import Testimonials from "../components/Testimonials";
             </div>
           </div>
         </div>
-        <Footer />
+        <Footer client:load/>
       </section>
 </Layout>

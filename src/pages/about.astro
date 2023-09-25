@@ -9,9 +9,9 @@ import Box3 from "../images/about/icon3.png";
 import Layout from "../layouts/Layout.astro";
 ---
 
-<Layout title="about pageƒ.">
+<Layout title="about page.">
   <section class="about-page">
-    <HeroPages name="About" />
+    <HeroPages name="About" client:load />
     <div class="container">
       <div class="about-main">
         <img class="about-main__img" src={AboutMain.src} alt="car-renting" />
@@ -49,7 +49,7 @@ import Layout from "../layouts/Layout.astro";
           </div>
         </div>
       </div>
-      <PlanTrip />
+      <PlanTrip client:load />
     </div>
   </section>
   <div class="book-banner">
@@ -64,5 +64,5 @@ import Layout from "../layouts/Layout.astro";
       </div>
     </div>
   </div>
-  <Footer />
+  <Footer client:load/>
 </Layout>

@@ -23,7 +23,7 @@ const teamPpl = [
 
 <Layout title="team">
     <section class="team-page">
-        <HeroPages name="Our Team" />
+        <HeroPages name="Our Team" client:load/>
         <div class="cotnainer">
           <div class="team-container">
             {teamPpl.map((ppl) => (
@@ -51,6 +51,6 @@ const teamPpl = [
             </div>
           </div>
         </div>
-        <Footer />
+        <Footer client:load/>
       </section>
 </Layout>
