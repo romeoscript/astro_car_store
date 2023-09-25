@@ -2,6 +2,7 @@ import MainImg from "../images/chooseUs/main.png";
 import Box1 from "../images/chooseUs/icon1.png";
 import Box2 from "../images/chooseUs/icon2.png";
 import Box3 from "../images/chooseUs/icon3.png";
+import '../styles/ChooseStyles/_index.scss'
 
 function ChooseUs() {
   return (
@@ -11,7 +12,7 @@ function ChooseUs() {
           <div className="choose-container">
             <img
               className="choose-container__img"
-              src={MainImg}
+              src={MainImg.src}
               alt="car_img"
             />
             <div className="text-container">
@@ -33,7 +34,7 @@ function ChooseUs() {
               </div>
               <div className="text-container__right">
                 <div className="text-container__right__box">
-                  <img src={Box1} alt="car-img" />
+                  <img src={Box1.src} alt="car-img" />
                   <div className="text-container__right__box__text">
                     <h4>Cross Country Drive</h4>
                     <p>
@@ -44,7 +45,7 @@ function ChooseUs() {
                 </div>
                 <div className="text-container__right__box">
                   {" "}
-                  <img src={Box2} alt="coin-img" />
+                  <img src={Box2.src} alt="coin-img" />
                   <div className="text-container__right__box__text">
                     <h4>All Inclusive Pricing</h4>
                     <p>
@@ -55,7 +56,7 @@ function ChooseUs() {
                 </div>
                 <div className="text-container__right__box">
                   {" "}
-                  <img src={Box3} alt="coin-img" />
+                  <img src={Box3.src} alt="coin-img" />
                   <div className="text-container__right__box__text">
                     <h4>No Hidden Charges</h4>
                     <p>

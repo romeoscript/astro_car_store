@@ -1,4 +1,5 @@
 import { useState } from "react";
+import '../styles/FaqStyles/_index.scss'
 
 function Faq() {
   const [activeQ, setActiveQ] = useState("q1");

@@ -1,3 +1,4 @@
+import '../styles/FooterStyles/_index.scss'
 function Footer() {
   return (
     <>

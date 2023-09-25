@@ -1,3 +1,4 @@
+import '../styles/BannerStyles/_index.scss'
 function Banner() {
   return (
     <>

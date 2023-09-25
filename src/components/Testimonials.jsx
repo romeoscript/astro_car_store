@@ -1,5 +1,6 @@
 import Img2 from "../images/testimonials/pfp1.jpg";
 import Img3 from "../images/testimonials/pfp2.jpg";
+import '../styles/TestimonialsStyles/_index.scss'
 
 function Testimonials() {
   return (
@@ -30,7 +31,7 @@ function Testimonials() {
                 </p>
                 <div className="all-testimonials__box__name">
                   <div className="all-testimonials__box__name__profile">
-                    <img src={Img2} alt="user_img" />
+                    <img src={Img2.src} alt="user_img" />
                     <span>
                       <h4>Jones Mbogholi</h4>
                       <p>Kenya</p>
@@ -49,7 +50,7 @@ function Testimonials() {
                 </p>
                 <div className="all-testimonials__box__name">
                   <div className="all-testimonials__box__name__profile">
-                    <img src={Img3} alt="user_img" />
+                    <img src={Img3.src} alt="user_img" />
                     <span>
                       <h4>Solomon Odingo </h4>
                       <p>South Sudan</p>
