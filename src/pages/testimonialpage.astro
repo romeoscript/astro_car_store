@@ -1,0 +1,27 @@
+---
+import Layout from "../layouts/Layout.astro";
+import Footer from "../components/Footer";
+import HeroPages from "../components/HeroPages";
+import Testimonials from "../components/Testimonials";
+---
+
+<Layout title="testimonial">
+
+    <section class="testimonial-page">
+        <HeroPages name="Testimonials" />
+        <Testimonials />
+        <div class="book-banner">
+          <div class="book-banner__overlay"></div>
+          <div class="container">
+            <div class="text-content">
+              <h2>Book a car by getting in touch with us</h2>
+              <span>
+                <i class="fa-solid fa-phone"></i>
+                <h3>(123) 456-7869</h3>
+              </span>
+            </div>
+          </div>
+        </div>
+        <Footer />
+      </section>
+</Layout>
