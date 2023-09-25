@@ -5,7 +5,9 @@ interface Props {
 
 const { title } = Astro.props;
 
+import Navbar from '../components/Navbar';
 import '../styles/styles.css'
+
 ---
 
 <!doctype html>
@@ -19,6 +21,7 @@ import '../styles/styles.css'
 		<title>{title}</title>
 	</head>
 	<body>
+		<Navbar />
 		<slot />
 	</body>
 </html>

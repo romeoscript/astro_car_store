@@ -1,5 +1,6 @@
-import { Link } from "react-router-dom";
+
 import Logo from "../images/logo/logo.png";
+import '../styles/NavbarStyles/_index.scss'
 import { useState } from "react";
 
 function Navbar() {
@@ -19,34 +20,34 @@ function Navbar() {
           </div>
           <ul className="mobile-navbar__links">
             <li>
-              <Link onClick={openNav} to="/">
+              <a onClick={openNav} href="/">
                 Home
-              </Link>
+              </a>
             </li>
             <li>
-              <Link onClick={openNav} to="/about">
+              <a onClick={openNav} href="/about">
                 About
-              </Link>
+              </a>
             </li>
             <li>
-              <Link onClick={openNav} to="/models">
+              <a onClick={openNav} href="/models">
                 Models
-              </Link>
+              </a>
             </li>
             <li>
-              <Link onClick={openNav} to="/testimonials">
+              <a onClick={openNav} href="/testimonials">
                 Testimonials
-              </Link>
+              </a>
             </li>
             <li>
-              <Link onClick={openNav} to="/team">
+              <a onClick={openNav} href="/team">
                 Our Team
-              </Link>
+              </a>
             </li>
             <li>
-              <Link onClick={openNav} to="/contact">
+              <a onClick={openNav} href="/contact">
                 Contact
-              </Link>
+              </a>
             </li>
           </ul>
         </div>
@@ -55,54 +56,54 @@ function Navbar() {
 
         <div className="navbar">
           <div className="navbar__img">
-            <Link to="/" onClick={() => window.scrollTo(0, 0)}>
-              <img src={Logo} alt="logo-img" />
-            </Link>
+            <a href="/" onClick={() => window.scrollTo(0, 0)}>
+              <img src={Logo.src} alt="logo-img" />
+            </a>
           </div>
           <ul className="navbar__links">
             <li>
-              <Link className="home-link" to="/">
+              <a className="home-a" href="/">
                 Home
-              </Link>
+              </a>
             </li>
             <li>
               {" "}
-              <Link className="about-link" to="/about">
+              <a className="about-link" href="/about">
                 About
-              </Link>
+              </a>
             </li>
             <li>
               {" "}
-              <Link className="models-link" to="/models">
+              <a className="models-link" href="/models">
                 Vehicle Models
-              </Link>
+              </a>
             </li>
             <li>
               {" "}
-              <Link className="testi-link" to="/testimonials">
+              <a className="testi-link" href="/testimonials">
                 Testimonials
-              </Link>
+              </a>
             </li>
             <li>
               {" "}
-              <Link className="team-link" to="/team">
+              <a className="team-link" href="/team">
                 Our Team
-              </Link>
+              </a>
             </li>
             <li>
               {" "}
-              <Link className="contact-link" to="/contact">
+              <a className="contact-link" href="/contact">
                 Contact
-              </Link>
+              </a>
             </li>
           </ul>
           <div className="navbar__buttons">
-            <Link className="navbar__buttons__sign-in" to="/">
+            <a className="navbar__buttons__sign-in" href="/">
               Sign In
-            </Link>
-            <Link className="navbar__buttons__register" to="/">
+            </a>
+            <a className="navbar__buttons__register" href="/">
               Register
-            </Link>
+            </a>
           </div>
 
           {/* mobile */}
