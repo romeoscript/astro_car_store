@@ -11,12 +11,12 @@ function Navbar() {
   const openNav = () => {
     setNav(!nav);
   };
- 
+  console.log(nav);
   return (
     <>
       <nav>
         {/* mobile */}
-        {nav && <div className='mobile-navbar1'style={mobileNavStyle}>
+        {nav && <div className='mobile-navbar1'>
           <ul className="mobile-navbar__links">
             <li>
               <a onClick={openNav} to="/">
